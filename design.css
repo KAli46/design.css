@@ -1,0 +1,316 @@
+/**
+ * ----------------------------------------
+ * This script was developed by KAli46 | KAli46#4211
+ * ----------------------------------------
+ */
+@import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+@font-face {
+	font-family: 'Tajawal';
+	src: url(fonts/Tajawal.ttf);
+}
+.ogrp_console {
+	display: block;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 395px;
+	color: white;
+	font-weight: bold;
+}
+.ogrp_mainMenu {
+  display: block;
+  width: 210px;
+  height: 410px;
+  position: absolute;
+  z-index: 3000;
+  bottom: 70px;
+  right: 270px;
+  text-align: center;
+  box-shadow: -1px -1px 60px -1px rgba(0,0,0,1);
+  cursor: pointer;
+  background-image: url(https://i.imgur.com/xTKNGlh.jpg);
+  -webkit-animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  border-radius: 20px;
+  border: 2px solid rgb(1, 1, 1);
+}
+
+.ogrp_menuHeader {
+	display: none;
+}
+.ogrp_menuChoices {
+	display: block;
+	overflow: auto;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 100%;
+}
+.ogrp_menuChoices::-webkit-scrollbar {
+	display: none;
+}
+.ogrp_menuChoice {
+	display: block;
+	padding: 11px;
+	font-size: 15px;
+	font-family: 'Tajawal';
+	line-height: 15px;
+	height: 15px;
+	color: rgb(255, 255, 255);
+	border-bottom: 0px;
+  text-align: center;
+  font-weight: bold;
+}
+.ogrp_menuChoices::-webkit-scrollbar {
+	display: none;
+}
+
+
+
+.ogrp_menuChoice:before { content: "\00a0 ";  
+}
+.ogrp_menuChoice:hover {
+	background-color: rgba(54, 54, 54, 0.7);
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.ogrp_MenuChoiceSelected {
+	background-color: rgba(54, 54, 54, 0.7);
+    -webkit-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+.ogrp_menuDescription {
+	display: block;
+	position: absolute;
+	top: 2.5%;
+	left: -10px;
+	border-radius: 10px;
+	box-shadow: -1px -1px 60px 0px rgba(166, 166, 166, 0.514);
+	background-color: rgb(85, 85, 85);
+	padding: 9px;
+	-webkit-transform: translate(-100%, 0);
+	text-align: left;
+}
+.ogrp_menuDescriptionContent {
+	display: block;
+	max-width: 350px;
+	text-align: left;
+  font-family: 'Tajawal', sans-serif;
+	font-size: 15px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+/**
+ * ----------------------------------------
+ * This keyframe was developed by KAli46 | KAli46#4211
+ * ----------------------------------------
+ */
+ @keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* progress bar */
+.progressbar{
+position: absolute;
+}
+
+.progressbar .inner{
+}
+
+.progressbar .label{
+position: absolute;
+color: white;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px black;
+}
+
+to
+
+/* progress bar */
+.progressbar{
+position: absolute;
+padding-top:3px;
+padding-bottom:3px;
+}
+
+@media only screen and (max-width: 1366px) {
+.progressbar{
+position: absolute;
+padding-top:2px;
+padding-bottom:2px;
+}
+}
+
+.progressbar .inner{
+}
+
+.progressbar .label{
+position: absolute;
+color: white;
+font-weight: bold;
+text-align: center;
+text-shadow: 2px 2px black;
+}
+
+/* wprompt */
+.wprompt {
+    background-image: url(https://i.imgur.com/2lQalJd.png); 
+    font-family: 'Tajawal', sans-serif;
+    box-shadow: 1px 1px 18px 1px #000000;
+    color: #ffffff;
+    width: 400px;
+    height: 130px;
+    border: 3px solid black;
+    border-radius: 0px 0px 45px 45px;
+    border-style: solid;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 0%;
+}
+
+.wprompt h1 {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.wprompt textarea {
+    outline: none !important;
+    background-color: black;
+    color: #ffffff;
+    width: 100%;
+    padding: 0px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+    border-color: black;
+}
+
+.wprompt textarea:focus{
+  outline: none !important;
+}
+
+.wprompt .help {
+    font-size: 12px;
+    font-family: 'Tajawal', sans-serif;
+    padding: 16px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* request manager */
+.request_manager{
+	position: absolute;
+	bottom: 25px;
+	right: 10px;
+	text-align: right;
+}
+
+.request_manager div{
+	margin-top: 10px;
+}
+
+.request_manager div > span{
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.50);
+	padding: 4px;
+}
+
+.request_manager .yes{
+  font-family: 'Tajawal', sans-serif;
+  padding-left: 15px;
+  color: rgb(0,255,0);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.request_manager .no{
+  font-family: 'Tajawal', sans-serif;
+  color: rgb(255,0,0);
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+/* announce */
+
+.announce{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 800px;
+  height: 150px;
+  padding: 10px;
+  margin-left: -400px;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Tajawal', sans-serif;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: none;
+  opacity: 0.90;
+}
